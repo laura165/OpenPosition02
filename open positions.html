@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+   
+    <div class="open-positions">
+        <p><strong> Open Positions</strong> </p>
+    </div>
+
+    <form>
+       <span class="inline text-small">Showing</span>
+       <span class="inline text-small">
+           <select class="inline input-number">
+            <option value="1">5</option>
+            <option value="2">10</option>
+            <option value="3">20</option>
+            <option value="4">50</option>
+           </select>
+       </span>
+       <span class="inline text-small">results out of 47.</span>
+       <div class="inline">
+           <div>
+           <span class="small">
+               <span class="label">Previous</span>
+           </span>
+
+           <span class="text-small">
+          
+               | 
+          
+              <input class="button-fix" type="button" value="1">
+
+                | 
+           </span>
+
+           <a href="#" class="label">Next</a>
+
+           </div>
+
+       </div>
+
+    </form>
+
+    <div class="container-3">
+     
+<div class="all-text"><p>All</p> </div>
+
+<div class="cloned " id='listParent'>   
+</div>
+</div>
+</div>
+
+   <script>
+    function makeList() {
+        const data = ['<b>Welders- All Shifts</b> - per year','<b>Welder</b> - per year ', '<b>Finish Welders/Auto Mechanics</b> - per year' ,'<b>Service Technician - 3rd Shift</b> - per year','<b>Service Center Technician</b>','<b>Welder</b> - per year','<b>Welder</b> - per year','<b>Welder</b> - per year','<b>2nd Shift Service Center Technician</b> - per year ','<b>Service Center Technician</b> - per year ']
+        const listParent = document.getElementById("listParent")
+
+        data.forEach(element => {
+            listParent.innerHTML += `
+                <div class="accordion colum-margin">
+                    <div class="accordion-row">
+                        <img class="jobs-icon" src="https://tradesfactorstorage.blob.core.windows.net/images/8e0ac484-45f0-43dd-877c-7e835075ce96.jpg">
+                        <p class="header">
+                            ${element}
+                        </p>
+                    </div>
+                    <button>DETAILS</button>
+                </div>`
+
+            listParent.innerHTML += `
+                <div class="panel">
+                   <div class="devider"></div>
+                         <div class="text-medium ">
+                             <div class="link-style">
+                                 <a href="#" class="link-1" >Morgan Corporation</a>
+                              </div>
+                         <strong>Morgantown</strong>
+                     <h3> 
+                <strong>Job Description</strong>
+            </h3>
+        <u>
+             <strong>KEY DUTIES & RESPONSIBILITIES:</strong>
+ </u>
+
+<p class="text">
+                Duties and responsibilities of skilled and unskilled welders differ as per their expertise levels. In general, the duties and responsibilities of a welder are:
+     </p>  
+         <p>&nbsp; </p>
+            <ol>
+                <li>Weld metals according to customer or employer requirements.</li>
+                <li>Ensure high safety measures while working such as donning protective gear for the face and body.</li>
+                <li>Operate heavy equipment such as industrial saws.</li>
+                <li>Examine the equipment after welding and advise maintenance of defects.</li>
+                <li>Plan/set up of welding operations before beginning.</li>
+                <li>Read blueprints and weld according to the plan.</li>
+                <li>Senior welders will supervise welding operations of junior welders.</li>
+                <li>Train junior and entry level welders.</li>
+            </ol>
+         <u>
+                <strong>EXPERTISE REQUIRED: </strong>
+     </u>
+ <p></p>
+    <ol>
+                <li>A thorough knowledge of the different methods and symbols of welding and ability to successfully pass the company certification for all welding applications it certifies on.</li>
+                <li>A thorough knowledge about safety precautions while working.</li>
+                <li>Ability to read blueprints and understand instructions.</li>
+                <li>Ability to analyze work at hand and execute welding procedure per training certifications.</li>
+                <li>Good decision-making skills.</li>
+                <li>Ability to work in heat and smoke.</li>
+                <li>Must pass medical questionnaire.</li>
+                <li>Must be able to finish work within given time</li>
+     </ol>
+            <p>
+                <u>
+                    <strong>MINIMUM QUALIFICATIONS:</strong>
+                </u>
+            </p>
+        
+         <ul>
+                <li>A high school diploma or GED preferred, but not required.</li>
+               <li>Vocational course in welding or previous welding training.</li>
+                <li>Compensation is commensurate on level of proficiency when taking welding test for certification.</li>
+                     </ul>
+        
+     <p class="text">We will provide training for additional welding certifications in the six (6) company welding applications.  </p>
+            <p>&nbsp; </p>
+         <p>
+                <u>
+                    <strong>PHYSICAL REQUIREMENTS:</strong>
+                </u>
+         </p>
+        
+         <p class="text">
+                This job operates in a manufacturing plant environment. While performing the duties of this job, the team member is regularly required to talk or hear. The team member frequently is required to stand (sometimes for extended periods); walk; use hands to finger, handle or feel; and reach with hands and arms, and lift up to 35 pounds. The team member may, at times, sit, bend, stoop, squat, reach overhead, or crawl (may be in confined spaces). The team member is expected to perform repetitive tasks using their hands, and have the ability to climb ladders and/or work in high places.
+                <p></p>
+         </p>
+        
+            <div class= "button">
+        
+                <button class="big-button">APPLY NOW</button>
+        
+            </div>
+        
+        </div>
+    </div>`
+        })
+    }
+    
+     makeList()
+
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+</script>
+    </body>
+
+</html>

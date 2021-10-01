@@ -1,0 +1,252 @@
+body{
+
+    background-color:#f2f4f8;
+    font-family: Poppins,sans-serif ;
+    font-size: 17px;
+   
+   
+}
+
+.open-positions{
+    font-size:40px;
+    font-family: Poppins,sans-serif;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.all-text{
+    
+    color: tomato;
+    font-size: 15px;
+  
+}
+
+.all-text p{
+  
+    background-color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border-radius: 40px;
+}
+
+
+.header{
+    font-family: Poppins,sans-serif;
+    color: #070f1a;
+    font-size: 21.5px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+   
+}
+
+button{
+    height: 40px;
+    width:98px;
+    background-color: #ffa185;
+    color: white;
+    font-size: 11px;
+    font-family:Poppins,sans-serif; 
+    letter-spacing: 1.5px;
+    border: 2px solid #ffa185 ;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.container-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jobs-icon{
+    width:60px;
+    height: 16px;
+    margin-bottom: 20px;
+}
+
+
+.accordion-row{
+    display: flex;
+    align-items: center;
+}
+
+.div-items{
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color:#fd8274;
+}
+
+
+ .text-small {
+    font-size: 14px;
+    font-weight: 400;
+ }
+
+
+ .inline{
+    max-width: 100%;
+    display: inline-block;
+    font-family: Poppins,sans-serif;
+    color: #070f1a;
+   font-size: 17px;
+ }
+
+ form {
+    display: block;
+    margin-top: 0em;
+    text-align: center;
+    
+}
+
+.input-number {
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+    border-style: none none solid;
+    border-width: 1px 1px 2px;
+    border-color: #000 #000 #f2f4f8;
+    background-color: transparent;
+    transition: box-shadow .1s ease-in-out;
+    line-height: 50px;
+}
+
+.label {
+    display: inline-block;
+    min-height: 0;
+    padding: 2px 6px;
+    border-radius: 10px;
+    background-color: #ffa185;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.button-fix{
+    border: 0px;
+}
+
+li{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    display: list-item;
+
+}
+
+ol,ul{
+   
+    color: #404350;
+    font-weight: 300;
+    display: block;
+    margin-bottom:25px ;
+    margin-top: 30px;
+}
+
+a{
+    background-color: transparent;
+    color: #ffa185;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+   
+}
+
+.link-1:hover{
+    color: #ffa185;
+    text-decoration: underline;
+
+}
+
+.text{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #404350;;
+    font-weight: 300;
+    font-family: Poppins,sans-serif;
+}
+
+
+.big-button{
+    display: inline-block;
+    padding: 0 35px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    width:157px;
+    height: 50px;
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    position: relative;    
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.4s;
+    margin : 0;
+    box-sizing: border-box;
+    border-width: 2.25px;
+    border-style:solid;
+    border-color: transparent;
+    background-color: white;
+    border-radius: 20px; 
+    padding: 30px 30px 30px 30px;
+    width:680px;
+}
+
+.accordion:hover {
+    border-color: black;
+}
+
+div.panel {
+    display: none;
+    background-color: white;
+}
+
+.panel{
+    width:680px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: -40px;
+    padding: 0 18px;
+    padding-top: 40px;
+    box-sizing: border-box;  
+}
+
+.link-style{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.devider{
+    width:5px;
+    color:#f2f4f8 ;
+}
+
+
+.colum-margin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablet: */
+    
+}
